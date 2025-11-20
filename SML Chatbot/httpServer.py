@@ -1,8 +1,8 @@
 import asyncio
 from aiohttp import web
-from friend_chatbot import FriendChatbot
+from modulefinder import chatBotModel
 
-chatbot = FriendChatbot()
+chatbot = chatBotModel()
 
 async def handle_chat(request):
   data = await request.json()
