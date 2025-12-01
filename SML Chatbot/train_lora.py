@@ -3,7 +3,7 @@ from datasets import Dataset
 from transformers import AutoTokenizer, AutoModelForCausalLM, Trainer, TrainingArguments, DataCollatorForLanguageModeling
 from peft import LoraConfig, get_peft_model, TaskType 
 
-MODEL_NAME = os.environ.get( "MODEL_NAME", "TinyLlama/TinyLlama-1.1B-Chat-v1.0")
+MODEL_NAME = os.environ.get( "MODEL_NAME", "meta-llama/Llama-3.2-1B-Instruct")
 OUTPUT_DIR = os.environ.get("OUTPUT_DIR", "output")
 BATCH_SIZE = int(os.environ.get("BATCH_SIZE", 2))
 EPOCHS = int(os.environ.get("EPOCHS", 3))
