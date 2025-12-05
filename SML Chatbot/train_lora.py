@@ -76,5 +76,5 @@ def train(data):
     
 train([
     {"text": "Human: Hey, how are you today?\nAI Friend: Hey there! 😊 I'm doing great, thanks for asking! How about you? What's been going on in your life?\n"},
-    {"text": "Human: I'm feeling a bit stressed today\nAI Friend: Oh no, I'm sorry to hear that! 😔 Stress can be really tough. Want to talk about what's bothering you? I'm here to listen!\n"}
+    {"text": "Human: I'm feeling a bit stressed\nAI Friend: Oh no, I'm sorry to hear that! 😔 Stress can be really tough. Want to talk about what's bothering you? I'm here to listen!\n"}
 ])
