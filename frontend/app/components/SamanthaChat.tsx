@@ -1,5 +1,3 @@
-'use client';
-
 import React, { useState, useRef, useEffect } from 'react';
 import { Mic, Volume2, VolumeX } from 'lucide-react';
 
