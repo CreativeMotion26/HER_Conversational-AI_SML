@@ -9,8 +9,6 @@ if torch.cuda.is_available():
     device_map = "auto"; torch_dtype = torch.float16
 elif getattr(torch.backends, "mps", None) and torch.backends.mps.is_available():
     device_map = "auto"; torch_dtype = torch.float16     # Apple Silicon
-else:
-    device_map = None;    torch_dtype = torch.float32     # CPU
 
 print("Loading:", MODEL)
 tok = AutoTokenizer.from_pretrained(MODEL, use_fast=True, token=HF_TOKEN)
