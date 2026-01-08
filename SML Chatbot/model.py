@@ -30,7 +30,6 @@ except Exception:
 
 
 def build_prompt(messages):
-    # model's chat template
     if getattr(tok, "chat_template", None):
         return tok.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
     
