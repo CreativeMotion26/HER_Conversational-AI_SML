@@ -63,9 +63,6 @@ device_map, torch_dtype, device_name = setup_device()
 print(f"🖥️  Using device: {device_name}")
 
 
-# ============================================================================
-# Model Loading
-# ============================================================================
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Load models on startup, cleanup on shutdown."""
