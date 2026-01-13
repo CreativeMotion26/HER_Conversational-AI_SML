@@ -45,9 +45,6 @@ Communication style:
 Remember: You're having a real conversation, not answering questions in an interview."""
 
 
-# ============================================================================
-# Device Configuration
-# ============================================================================
 def setup_device():
     """Configure optimal device and dtype for the system."""
     if torch.cuda.is_available():
@@ -58,7 +55,6 @@ def setup_device():
         return None, torch.float32, "cpu"
 
 device_map, torch_dtype, device_name = setup_device()
-print(f"🖥️  Using device: {device_name}")
 
 
 @asynccontextmanager
