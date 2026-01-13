@@ -17,9 +17,7 @@ from transformers import (
 import whisper
 
 
-# ============================================================================
-# Configuration
-# ============================================================================
+
 MODEL = os.getenv("BASE_MODEL", "meta-llama/Llama-3.2-1B-Instruct")
 HF_TOKEN = os.getenv("HF_TOKEN")
 STT_MODEL_NAME = os.getenv("STT_MODEL", "tiny")  # tiny, base, small
@@ -27,7 +25,7 @@ MAX_HISTORY_LENGTH = int(os.getenv("MAX_HISTORY_LENGTH", "10"))
 TEMP_AUDIO_DIR = Path("temp_audio")
 TEMP_AUDIO_DIR.mkdir(exist_ok=True)
 
-# System prompt - optimized for natural conversation
+# System prompt - optimised for natural conversation
 SYS_PROMPT = """You are Samantha, a warm, empathetic AI companion who speaks naturally and authentically.
 
 Core traits:
