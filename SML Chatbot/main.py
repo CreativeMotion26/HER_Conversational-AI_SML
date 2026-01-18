@@ -76,7 +76,7 @@ async def lifespan(app: FastAPI):
         low_cpu_mem_usage=True,  # Memory optimization for Mac
     )
     model.eval()  # Set to evaluation mode
-    print(f"✅ Language model loaded on {device_name}")
+    print(f"✅  model loaded on {device_name}")
     
     # Load STT model
     print(f"🎤 Loading Whisper STT: {STT_MODEL_NAME}")
